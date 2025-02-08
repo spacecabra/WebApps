@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--el meta va en el head-->
+   <meta charset="utf-8">
+   
+</head>
+
+<body>
+    <h2> Ejemplo de elemntos de formulario &#128125</h2>
+    <form action="#" method="post">
+
+
+    <!--grupos-->
+    <fieldset>
+        <legend>campos obligatorios</legend>
+
+        <!--campo de texto-->
+     <p>
+        <label>Nombre:</label>
+        <input type="text" id="id_nombre" name="nombre" required>
+     </p>
+     <!--campo de contraseña-->
+     <p>
+        <label>contraseña:
+            <input type="password" name="password" required>
+        </label>
+     </p>
+
+     <!--campo correo electronico-->
+     <p>
+        <label>correo:
+            <input type="email" name="email" required>
+        </label>
+     </p>
+    </fieldset>
+     <!--campo de numero-->
+     <p>
+        <label>edad:
+            <input type="number" name="numero" min="1" max="110">
+        </label>
+     </p>
+     <!--campo de fecha-->
+     <p>
+        <label>fecha de nacimiento:
+            <input type="date" name="fecha">
+        </label>
+     </p>
+
+     <!--campo de hora-->
+     <p>
+        <label>hora de cita:
+            <input type="time" name="hora">
+        </label>
+     </p>
+
+     <!--campo de seleccion-->
+     <p>
+        <label for="id_pais">pais:</label>
+            <select id="id_pais" name="pais">
+                <option value="">seleccione...</option>
+                <option value="mx">Mexico</option>
+                <option value="fr">Francia</option>
+                <option value="al">Alemania</option>
+            </select>
+            
+        </label>
+     </p>
+     <!--campo de radio-->
+     <p>
+        <label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+
+        </label for="femenino">femenino</label>
+     </p>
+
+     <!--casillas de verificacion-->
+     <p>
+        <label>intereses:</label>
+        <input type="checkbox" id="deportes" name="intereses" value="deportes">
+        <label for="deportes">deportes</label>
+
+        <input type="checkbox" id="artes" name="intereses" value="artes">
+        <label for="artes">artes</label>
+
+        <input type="checkbox" id="letura" name="intereses" value="lectura">
+        <label for="lectura">lectura</label>
+     </p>
+
+     <!--campo de archivo-->
+     <p>
+        <label for="archivo">subir archivo:</label>
+        <input type="file" id="archivo" name="file">
+     </p>
+
+     <!--area de texto-->
+     <p>
+     <label for="comentarios">comentarios:<br></label>
+     <textarea id="comentarios" name="comenta" rows="5" cols="50">este texto aparece...</textarea>
+    </p>
+
+    <!--botones-->
+    <p>
+        <button type="submit">enviar</button>
+        <button type="reset">restablecer</button>
+    </p>
+
+
+
+
+
+    </form>
+</body>
+</html>
+
+<!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head-->
+<!--https://www.fileformat.info/info/unicode/-->
