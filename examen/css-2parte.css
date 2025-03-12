@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Títulos */
+h1 {
+    color: blue;
+    font-size: 40px;
+}
+h2 {
+    color: blue;
+    font-size: 30px;
+}
+h3 {
+    color: blue;
+    font-size: 20px;
+}
+
+/* Imágenes de mascotas */
+.imagenes-mascotas {
+    background-color: lightgray;
+    padding: 25px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.imagenes-mascotas img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+/* Tarjeta de planta */
+.tarjeta-planta {
+    display: flex;
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+    align-items: center;
+}
+.tarjeta-planta .texto-planta {
+    text-align: left;
+    flex: 1;
+}
+.tarjeta-planta img {
+    width: 150px;
+    height: auto;
+    margin-left: 15px;
+}
+
+/* Tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+td:first-child {
+    background-color: darkred;
+    color: white;
+}
+td {
+    background-color: beige;
+}
+
+/* Contenedor de banderas */
+.banderas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+/* Bandera de Francia */
+.francia {
+    width: 60px;
+    height: 40px;
+    display: flex;
+}
+.francia::before, .francia::after {
+    content: "";
+    width: 20px;
+    height: 100%;
+    display: inline-block;
+}
+.francia::before {
+    background-color: blue;
+}
+.francia {
+    background-color: white;
+}
+.francia::after {
+    background-color: red;
+}
+
+/* Bandera de Alemania */
+.alemania {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.alemania::before, .alemania::after {
+    content: "";
+    width: 100%;
+    height: 33.33%;
+    display: block;
+}
+.alemania::before {
+    background-color: black;
+}
+.alemania {
+    background-color: red;
+}
+.alemania::after {
+    background-color: yellow;
+}
+
+/* Bandera de Italia */
+.italia {
+    width: 60px;
+    height: 40px;
+    display: flex;
+}
+.italia::before, .italia::after {
+    content: "";
+    width: 20px;
+    height: 100%;
+    display: inline-block;
+}
+.italia::before {
+    background-color: green;
+}
+.italia {
+    background-color: white;
+}
+.italia::after {
+    background-color: red;
+}

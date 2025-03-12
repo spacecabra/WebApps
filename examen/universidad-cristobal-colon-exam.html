@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Cristóbal Colón</title>
+    <style>
+        .blue-text {
+            color: blue;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Primera Parte -->
+    <h1>Universidad Cristóbal Colón</h1>
+    <h2>Evaluación Parcial</h2>
+    <h3>Ricardo Akzel Cabrera Umaña</h3>
+
+    <img src="Escudoexamen.png" alt="Logotipo de la Universidad Cristóbal Colón" width="200" height="auto">
+
+    <ol reversed>
+        <li>Aún estoy aquí</li>
+        <li>La chica de la aguja</li>
+        <li>Emilia Pérez</li>
+        <li>La semilla de la higuera sagrada</li>
+        <li>Flow</li>
+    </ol>
+
+    <table border="1">
+        <tr>
+            <th rowspan="2">Rango de edades</th>
+            <th colspan="2">Mujeres</th>
+            <th colspan="2">Hombres</th>
+            <th colspan="2">Promedio General</th>
+        </tr>
+        <tr>
+            <th>Estatura</th>
+            <th>Peso</th>
+            <th>Estatura</th>
+            <th>Peso</th>
+            <th>Estatura</th>
+            <th>Peso</th>
+        </tr>
+        <tr>
+            <td>5-10</td>
+            <td>0.9</td>
+            <td>35</td>
+            <td>1.1</td>
+            <td>38</td>
+            <td>1.0</td>
+            <td>36.5</td>
+        </tr>
+        <tr>
+            <td>11-15</td>
+            <td>0.98</td>
+            <td>40</td>
+            <td>1.6</td>
+            <td>65</td>
+            <td>1.3</td>
+            <td>52.5</td>
+        </tr>
+        <tr>
+            <td>16-20</td>
+            <td>1.50</td>
+            <td>45</td>
+            <td>1.72</td>
+            <td>70</td>
+            <td>1.61</td>
+            <td>57.5</td>
+        </tr>
+        <tr>
+            <td>21-30</td>
+            <td>1.60</td>
+            <td>50</td>
+            <td>1.7</td>
+            <td>75</td>
+            <td>1.65</td>
+            <td>62.5</td>
+        </tr>
+        <tr>
+            <td>31-35</td>
+            <td>1.67</td>
+            <td>64</td>
+            <td>1.73</td>
+            <td>78</td>
+            <td>1.7</td>
+            <td>71</td>
+        </tr>
+        <tr>
+            <td>35-40</td>
+            <td>1.62</td>
+            <td>60</td>
+            <td>1.71</td>
+            <td>80</td>
+            <td>1.69</td>
+            <td>70</td>
+        </tr>
+    </table>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+        
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"><br><br>
+        
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+        
+        <label>Estado civil:</label><br>
+        <input type="radio" id="soltero" name="estado_civil" value="soltero">
+        <label for="soltero">Soltero/a</label><br>
+        <input type="radio" id="casado" name="estado_civil" value="casado">
+        <label for="casado">Casado/a</label><br>
+        <input type="radio" id="divorciado" name="estado_civil" value="divorciado">
+        <label for="divorciado">Divorciado/a</label><br>
+        <input type="radio" id="viudo" name="estado_civil" value="viudo">
+        <label for="viudo">Viudo/a</label><br><br>
+        
+        <label>Principales intereses:</label><br>
+        <input type="checkbox" id="tecnologia" name="intereses[]" value="tecnologia">
+        <label for="tecnologia">Tecnología</label><br>
+        <input type="checkbox" id="arte" name="intereses[]" value="arte">
+        <label for="arte">Arte</label><br>
+        <input type="checkbox" id="deporte" name="intereses[]" value="deporte">
+        <label for="deporte">Deporte</label><br>
+        <input type="checkbox" id="ciencia" name="intereses[]" value="ciencia">
+        <label for="ciencia">Ciencia</label><br><br>
+        
+        <label for="residencia">Lugar de residencia:</label>
+        <select id="residencia" name="residencia">
+            <option value="">Seleccione una opción</option>
+            <option value="veracruz">Veracruz</option>
+            <option value="cdmx">Ciudad de México</option>
+            <option value="monterrey">Monterrey</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+
+</body>
+</html>
